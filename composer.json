@@ -1,0 +1,34 @@
+{
+    "name": "collaborar/forgge-cli",
+    "version": "0.17.0",
+    "description": "CLI tool for Forgge.",
+    "type": "library",
+    "license": "GPL-2.0-only",
+    "homepage": "https://forgge.com/",
+    "authors": [
+    {
+      "name": "Collaborar team",
+      "email": "info@collaborar.com",
+      "homepage": "https://collaborar.com",
+      "role": "Developer"
+    }
+  ],
+    "require": {
+        "symfony/console": "^3.4 | ^4 | ^5",
+        "symfony/process": "^3.4 | ^4 | ^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Forgge\\Cli\\": "src/"
+        },
+        "files": [
+            "config.php"
+        ]
+    },
+    "scripts": {
+        "test-install": "Forgge\\Cli\\App::install"
+    },
+    "bin": [
+        "bin/forgge"
+    ]
+}
