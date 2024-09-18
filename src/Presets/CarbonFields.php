@@ -14,7 +14,7 @@ class CarbonFields implements PresetInterface {
 	 *
 	 * @var string
 	 */
-	protected $package_name = 'collaborar/carbon-fields';
+	protected $package_name = 'htmlburger/carbon-fields';
 
 	/**
 	 * Version constraint.

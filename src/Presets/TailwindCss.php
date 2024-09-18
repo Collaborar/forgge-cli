@@ -28,7 +28,7 @@ class TailwindCss implements PresetInterface {
 			=> $this->path( $directory, 'resources', 'build', 'tailwindcss.js' ),
 		]);
 
-		$postcss_js_filepath = $this->path( $directory, 'resources', 'build', 'postcss.js' );
+		$postcss_js_filepath = $this->path( $directory, '.postcssrc.js' );
 		$this->enablePreset( $postcss_js_filepath, 'Tailwind CSS' );
 
 		$development_mode_plugin_js_filepath = $this->path( $directory, 'resources', 'build', 'lib', 'development-mode-plugin.js' );

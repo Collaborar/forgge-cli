@@ -9,15 +9,16 @@
 	convertNoticesToExceptions="true"
 	convertWarningsToExceptions="true"
 	backupGlobals="false"
+	cacheDirectory=".phpunitcache"
 	>
 	<testsuites>
 		<testsuite name="Forgge Test Suite">
 			<directory suffix=".php">./tests/php/unit-tests/</directory>
 		</testsuite>
 	</testsuites>
-	<filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./app/src</directory>
-		</whitelist>
-	</filter>
+	<source>
+		<include>
+			<directory suffix=".php">./src</directory>
+		</include>
+	</source>
 </phpunit>
