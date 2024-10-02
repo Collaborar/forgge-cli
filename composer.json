@@ -1,6 +1,6 @@
 {
     "name": "collaborar/forgge-cli",
-    "version": "0.17.0",
+    "version": "1.0.0",
     "description": "CLI tool for Forgge.",
     "type": "library",
     "license": "GPL-2.0-only",
